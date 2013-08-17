@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  
+
   def update
     @post = Post.find(params[:id])
    
@@ -9,16 +12,6 @@ class PostsController < ApplicationController
     end
   end
   
- def update
-    @post = Post.find(params[:id])
-   
-    if @post.update(params[:post].permit(:title, :text))
-      redirect_to @post
-    else
-      render 'edit'
-    end
-  end
-
   def index
   	@posts = Post.all
   end
