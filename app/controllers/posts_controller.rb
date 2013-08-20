@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  http_basic_authenticate_with name: "1234", password: "1234", except: [:index, :show]
+  http_basic_authenticate_with name: "1234", password: "1234", except: [:index, :show, :new, :create]
   
 
   def update
