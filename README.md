@@ -1,6 +1,5 @@
-Bienvenidos
+Bienvenidos / Welcome
 
-Este es parte de la página guides.rubyonrails.org , concretamente es el "Getting started"
+Esto es un repositorio con algunos tutoriales que he ido sacando de la red y haciendo como ejemplos para mejorar mi experiencia en Ruby y Rails.
 
-Rails => 4.0.0
-Ruby => 2.0.0
+This is a repository with some tutorials that I did for improve my experience on Ruby and Rails.
